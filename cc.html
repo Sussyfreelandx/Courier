@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./BUFFALOEX_files/font_3160285_luflb109vu.css" type="text/css" />
     <title>BUFFALOEX</title>
     <link rel="stylesheet" crossorigin="" href="./BUFFALOEX_files/index-cwh4ftNa.css" />
+    <link rel="stylesheet" crossorigin="" href="./BUFFALOEX_files/index-z7xXHERF.css" />
     <style>
         /* Honeypot field — invisible to humans but visible to naive bots */
         .hp-field {
@@ -21,9 +22,12 @@
             overflow: hidden;
             opacity: 0;
         }
-        /* Replace the missing login-71zUY77K.png background with a soft gradient */
+        /* Fallback for the original warehouse photo (login-71zUY77K.png), which
+           was not included in the uploaded BUFFALOEX_files. The original CSS
+           sets .mainContent { background-size:100% 100%; background-repeat:round }
+           but no image — so layer the SVG via background-image only. */
         .mainContent {
-            background: linear-gradient(135deg, #1f2a44 0%, #2a3a5e 100%) !important;
+            background-image: url('./BUFFALOEX_files/login-71zUY77K.svg');
         }
     </style>
 </head>
